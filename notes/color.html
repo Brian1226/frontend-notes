@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p.hex {
+                color: #F9B21B;
+            }
+            .rgb {
+                color: rgb(50,150,0);
+            }
+            .rgba {
+                background-color: rgba(20,50,100,0.3);
+            }
+            body {
+                background-color: #FFFFFF;
+            }
+            div {
+                display: inline-block;
+                height: 100px;
+                width: 100px;
+            }
+            .blue {
+                background-color: #0000FF;
+            }
+            .yellow {
+                background-color: #FFFF00;
+            }
+            .orange {
+                background-color: #FF7F00;
+            }
+            .cyan {
+                background-color: #00FFFF;
+            }
+            .raspberry {
+                background-color: #FF007F;
+            }
+            .red1 {
+                background-color: hsl(0, 100%, 75%);
+            }
+            .red2 {
+                background-color: hsl(0, 100%, 50%);
+            }
+            .red3 {
+                background-color: hsl(0, 100%, 25%);
+            }
+            .linear-gradient {
+                background: linear-gradient(45deg, rgba(0,0,255,0), rgba(0,0,255,1));
+            }
+            .repeating-linear-gradient {
+                background: repeating-linear-gradient(45deg, blue 0px, green 10px, red 20px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--hexadecimal code: 6 (can be 3) digits from 0-F for R, G, B-->
+        <p class="hex">I am hexadecimal code</p>
+
+        <!--"rgb()": specify brightness of each color 0-255-->
+        <p class="rgb">I am RGB</p>
+
+        <!--"rgba()": "a" ranges from 1(opaque) to 0(transparent)-->
+        <p class="rgba">I am RGBA</p>
+
+        <!--secondary colors: mixing 2 primary colors, complement to unused primary-->
+        <!--tertiary colors: combining primary and its secondary neighbor-->
+        <!--complementary colors: opposite colors on wheel, gray color (combined), vibrant contrast (side-by-side)-->
+        <p>complementary colors:</p>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <br>
+
+        <!--split-complementary colors: pair base color with 2 colors adjacent to its complementary-->
+        <p>split-complementary colors:</p>
+        <div class="orange"></div>
+        <div class="cyan"></div>
+        <div class="raspberry"></div>
+        <br>
+
+        <!--"hsl()": hue(0-360), saturation(0-100%), lightness(0-100%)-->
+        <p>hue, saturation, lightness:</p>
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+        <br>
+
+        <!--"background" property's "linear-gradient()" function: (gradient_direction, color 1, color 2,...)-->
+        <p>gradient:</p>
+        <div class="linear-gradient"></div>
+
+        <!--"repeating-linear-gradient()": color stops mark where transition takes place-->
+        <div class="repeating-linear-gradient"></div>
+    </body>
+</html>

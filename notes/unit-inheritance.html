@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .relative-unit {
+                font-size: 5em;
+            }
+            .absolute-unit {
+                font-size: 200px;
+            }
+            .pink-text {
+                color: pink;
+            }
+            .green-text {
+                color: green !important;
+            }
+            #orange-text {
+                color: orange;
+            }
+            body {
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--absolute units: actual physical measurement on screen (px, in, etc.)-->
+        <!--relative units: relative to another length value (em, rem, %, vh, vw)-->
+        <h2 class="relative-unit">I am a relative unit</h2>
+
+        <!--inheritance: subsequent elements declaration in <style> have priority, child elements inherit parent's styles-->
+        <!--specificity: "!important" > inline style > "id" > "class", "pseudo-class" & "[attribute]" > "element" & "pseudo-element" > *-->
+        <h2 class="pink-text green-text" id="orange-text" style="color: red">I am an inheritance</h2>
+    </body>
+</html>

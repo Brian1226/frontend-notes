@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--created variables can be used inside the selector and any of that selector's descendants (local scope)-->
+<!--variables defined in ":root" element (global scope)-->
+<!--incompatible browser will use earlier declaration-->
+<!--fallback value to variable (after comma)-->
+<head>
+    <style>
+        :root {
+            --variable: gray;
+        }
+        .class {
+            --variable: blue;
+        }
+        body {
+            background: red;
+            background-color: var(--variable, red);
+        }
+        p::before {
+            content: "Brian ";
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="class"></body>
+
+<!--pseudo-class selector: selects element that are in a specific state, behave as if added a class into the HTML-->
+<!--specifications: ":root", ":first-child", ":last-child", "nth-child()" ":only-child", ":hover", ":focus", ":active", ":link", ":visited"-->
+<p>Nguyen</p>
+<!--pseudo-element selector: behave as if added new element into markup, rather than applying a class to existing elements-->
+<!--specifications: "::before", "::after", "::first-letter" "::first-line", "::marker", "::selection"-->
+</html>

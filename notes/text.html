@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--"link" element: links document to other resources-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            .letter-spacing {
+                letter-spacing: 10px;
+            }
+            .word-spacing {
+                word-spacing: 10px;
+            }
+            .text-align {
+                text-align: center;
+            }
+            .text-indent {
+                text-indent: 100px;
+            }
+            .text-shadow {
+                text-shadow: 2px 2px 2px red;
+            }
+            .box-shadow {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.25);
+            }
+            .opacity {
+                opacity: 0.5;
+            }
+            .text-transform {
+                text-transform: uppercase;
+            }
+            .size-weight {
+                font-size: 28px;
+                font-weight: 900;
+            }
+            .font-family {
+                font-family: "Roboto", monospace;
+            }
+            .line-height {
+                line-height: 150px;
+            }
+            a:hover {
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--"sub" and "sup" element: subscript and superscript-->
+        <p>I am <sub>subscript</sub> and <sup>superscript</sup></p>
+
+        <!--"strong" tag = font-weight: bold; = <b></b>-->
+        <p><strong>I am bold</strong></p>
+
+        <!--"u" tag = text-decoration: underline;-->
+        <p><u>I am underline</u></p>
+
+        <!--"em" tag = font-style: italic-->
+        <p><em>I am italic</em></p>
+
+        <!--"s" tag = text-decoration: line-through;-->
+        <p><s>I am strikethrough</s></p>
+
+        <!--"hr" tag: horizontal line-->
+        <hr><p>I am horizontal line</p><hr>
+
+        <!--"letter-spacing" property: specify space between characters-->
+        <p class="letter-spacing">I am letter-spacing</p>
+
+        <!--"word-spacing" property: specify space between words-->
+        <p class="word-spacing">I am word-spacing</p>
+
+        <!--"text-align" property values: justify, center, left, right-->
+        <p class="text-align">I am text-align (centered)</p>
+
+        <!--"text-indent" property: specify indentation of first line-->
+        <p class="text-indent">I am text-indent</p>
+
+        <!--"text-shadow" property syntax: offset-x, offset-y, blur-radius, and color.-->
+        <p class="text-shadow">I am text-shadow</p>
+
+        <!--"box-shadow" property syntax: "inset" (optional), offset-x, offset-y, blur-radius, spread-radius, and color.-->
+        <p class="box-shadow">I am box-shadow</p>
+
+        <!--"opacity" property: 0 (transparent) - 1 (opaque)-->
+        <p class="opacity">I am opacity</p>
+
+        <!--"text-transform" property values: lowercase, uppercase, capitalize, initial, inherit, none -->
+        <p class="text-transform">I am text-transform (uppercase)</p>
+
+        <!--"font-weight" property: sets thinness or thickness of characters-->
+        <p class="size-weight">I am font-size & weight</p>
+
+        <!--"font-family" property syntax: (desired font, generic font)-->
+        <p class="font-family">I am font-family</p>
+
+        <!--"line-height" property: changes amount of vertical space between each text-->
+        <p class="line-height">I am line-height</p>
+
+        <!--":hover" pseudo-class selector, add pseudo-class keyword to selector to select specific state of element-->
+        <a href="#"><p>I am hover</p></a>
+
+        <!--entities: used to display reserved HTML characters-->
+        <!--examples: &lt and &gt(< and >), &(&amp), "(&quot), copyright(&copy)-->
+        <p>copyright &copy;</p>
+    </body>
+</html>

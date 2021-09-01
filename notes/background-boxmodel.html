@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .image {
+                width: 100px;
+                height: 100px;
+            }
+            .border {
+                border-color: purple;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+            .background {
+                background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+                padding: 50px;
+            }
+            #padding-margin {
+                background-color: silver;
+                padding: 25px 25px 25px 900px;
+                margin: 100px 200px 10px 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--"border" property syntax: border-width, border-style (1-4 values), border-color-->
+        <!--"border-bottom-style", "border-bottom-style", "border-bottom-color", etc.-->
+        <!--"border-radius" property syntax: top-left, top-right, bottom-right, bottom-left-->
+        <img class="image border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp4FiKdk9H4Jmi4Sy5SfHjwPN2-I1yBs_X3w&usqp=CAU">
+
+        <!--"padding" and "margin" properties: can take 1-4 values-->
+        <!--"padding-right", "margin-top", etc.-->
+        <div class="background">
+            <p id="padding-margin">I am a padding-margin</p>
+        </div>
+
+        <!--"background" property syntax: background-color, background-image, background-repeat, background-attachment, background-position-->
+        <!--"background-size" property values: width & height, auto, contain, cover-->
+        <!--"background-position" property values: x-value & y-value, top, bottom, left, right -->
+    </body>
+</html>

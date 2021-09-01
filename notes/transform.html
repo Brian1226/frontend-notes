@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                display: block;
+                color: white;
+            }
+            .scale {
+                transform: scale(2);
+                background-color:red;
+                position: relative;
+                top: 100px;
+                left: 100px;
+            }
+            .skew {
+                transform: skew(25deg);
+                background-color: blue;
+                position: relative;
+                top: 200px;
+                left: 100px;
+            }
+            .translate {
+                transform: translate(100px, 300px);
+                background-color: green;
+            }
+            .rotate {
+                transform: rotate(45deg);
+                background-color: orange;
+                position: relative;
+                top: 400px;
+                left: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--"transform" property's "scale()" function-->
+        <div class="scale">I am scale</div>
+
+        <!--"transform" property's "skew()" function-->
+        <div class="skew">I am skew</div>
+
+        <!--"transform" property's "translate()" function-->
+        <div class="translate">I am translate</div>
+
+        <!--"transform" property's "rotate()" function"-->
+        <div class="rotate">I am rotate</div>
+    </body>
+</html>

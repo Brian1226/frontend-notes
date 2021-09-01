@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div h1 {
+                background: yellow;
+            }
+            span > h1 {
+                color: red;
+            }
+            div ~ h1 {
+                color: blue;
+            }
+            div + h1 {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>I am descendant</h1>
+            <h1>I am descendant</h1>
+                <span>
+                    <h1>I am child & descendant</h1>
+                </span>
+        </div>
+        <h1>I am adjacent sibling</h1>
+        <h1>I am general sibling</h1>
+    </body>
+</html>
