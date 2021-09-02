@@ -25,21 +25,18 @@
 
         <!--"action" attribute: sends form's data to specified address-->
         <form action="" method="">
-            <label="data">
-                <!--"type" attribute's values: "text", "password", "email"-->
-                <input type="text" name="" id="" placeholder="Enter text here" required>
-                <!--"submit" value: sends data to specified address-->
-                <button type="submit">Submit</button>
-                <!--<input type="button" value="Submit">-->
-            </label>
+            <label="data">Username:</label>
+            <!--"type" attribute's values: "text", "password", "email"-->
+            <input type="text" name="" id="" placeholder="Enter text here" required>
+            <!--"submit" value: sends data to specified address-->
+            <button type="submit">Submit</button>
             <br><br>
 
             <!--"textarea" element:-->
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" placeholder="Enter text here" id="" cols="30" rows="10"></textarea>
             <br><br>
 
-            <!--"select" element:-->
-            <!--"option" element:-->
+            <!--"select" element: creates drop-down list-->
             <select name="feelings" id="">
                 <option value="happy">happy</option>
                 <option value="sad">sad</option>
@@ -47,32 +44,30 @@
             </select>
             <br><br>
 
-            <!--wrapping "input" element into "label" element associate radio button with "label" element-->
+            <!--"label" element associate with corresponding radio buttons-->
             <!--"name" attribute: deselects other buttons, ensure only one answer by user-->
             <!--"for" attribute's value should match "id" attribute to connect "label" with "input"-->
-            <label for="happy">
-                <input type="radio" id="happy" value ="happy" name="feelings">happy
-            </label>
-            <label for="sad">
-                <input type="radio" id="sad" value ="sad" name="feelings">sad
-            </label>
-            <label for="angry">
-                <input type="radio" id="angry" value ="angry" name="feelings">angry
-            </label>
-            <br><br>
+            <input type="radio" id="happy" value ="happy" name="feelings">
+            <label for="happy">Happy</label>
+
+            <input type="radio" id="sad" value ="sad" name="feelings">
+            <label for="sad">Sad</label>
+
+            <input type="radio" id="angry" value ="angry" name="feelings">
+            <label for="angry">Angry</label>
+            <br>
 
             <!--"name" attribute: form sends group of related checkbox inputs-->
             <!--"value" attribute: send specified value to the server-->
             <!--"name"="value": included in form data when submitted, otherwise "name"=on-->
-            <label for="java">
-                <input type="checkbox" id="java" value="java" name="languages">java
-            </label>
-            <label for="python">
-                <input type="checkbox" id="python" value="python" name="languages">python
-            </label>
-            <label for="ruby">
-                <input type="checkbox" id="ruby" value="ruby" name="languages" checked>ruby
-            </label>
+            <input type="checkbox" id="java" value="java" name="languages">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="python" value="python" name="languages">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="ruby" value="ruby" name="languages" checked>
+            <label for="ruby">Ruby</label>
         </form>
         <br><br>
 
