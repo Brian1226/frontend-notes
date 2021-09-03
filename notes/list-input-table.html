@@ -32,6 +32,11 @@
             <button type="submit">Submit</button>
             <br><br>
 
+            <!--"date" attribute-->
+            <label for="pickdate">Preferred Date:</label>
+            <input type="date" id="pickdate" name="date">
+            <br><br>
+
             <!--"textarea" element:-->
             <textarea name="" placeholder="Enter text here" id="" cols="30" rows="10"></textarea>
             <br><br>
@@ -44,18 +49,21 @@
             </select>
             <br><br>
 
-            <!--"label" element associate with corresponding radio buttons-->
+            <!--"fieldset" element: groups related elements in form semantically-->
+            <!--"label" element: name for form control-->
             <!--"name" attribute: deselects other buttons, ensure only one answer by user-->
-            <!--"for" attribute's value should match "id" attribute to connect "label" with "input"-->
-            <input type="radio" id="happy" value ="happy" name="feelings">
-            <label for="happy">Happy</label>
+            <!--"for" attribute's value should match "id" attribute to associate "label" with "input"-->
+            <fieldset>
+                <legend>How are you feeling?</legend>
+                <input type="radio" id="happy" value ="happy" name="feelings">
+                <label for="happy">Happy</label>
 
-            <input type="radio" id="sad" value ="sad" name="feelings">
-            <label for="sad">Sad</label>
+                <input type="radio" id="sad" value ="sad" name="feelings">
+                <label for="sad">Sad</label>
 
-            <input type="radio" id="angry" value ="angry" name="feelings">
-            <label for="angry">Angry</label>
-            <br>
+                <input type="radio" id="angry" value ="angry" name="feelings">
+                <label for="angry">Angry</label>
+            </fieldset>
 
             <!--"name" attribute: form sends group of related checkbox inputs-->
             <!--"value" attribute: send specified value to the server-->

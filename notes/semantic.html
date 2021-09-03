@@ -16,8 +16,27 @@
 
             <!--"audio" element: plays audio file-->
             <!--"control" attribute: adds play, pause, volume -->
-            <audio id="meowClip" controls>
+            <audio controls>
                 <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
             </audio>
+
+            <!--"figure" element: wrap visuals with caption-->
+            <figure>
+                <img src="https://cdn.myanimelist.net/images/characters/6/343344.jpg" alt="mob">
+                <figcaption>An image of Mob</figcaption>
+            </figure>
+
+            <!--"time" element: inline element that wraps around date or time-->
+            <!--"datetime" attribute: holds valid format of date-->
+            <p>Today is <time datetime="2000-12-26">December 26.</time></p>
+
+            <!--"tabindex" attribute: specifies tab order of elements, and makes elements focusable-->
+            <!--"tabindex" values: -1(focusable, but not via keyboard), 0(focusable, but no set order), positive(sets focusable order)-->
+            <p tabindex="0">index = 0</p>
+            <p tabindex="2">index = 2</p>
+            <p tabindex="1">index = 1</p>
+            <p tabindex="-1">index = -1</p>
+
+
         </body>
 </html>
