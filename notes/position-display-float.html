@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                text-align: center;
+            }
+            .position {
+                position: relative;
+                right: 100px;
+            }
+            .float {
+                float: right;
+                width: 50%;
+            }
+            .z-index1 {
+                background-color: red;
+                z-index: 2;
+                position: relative;
+                width: 60%;
+                height: 200px;
+            }
+            .z-index2 {
+                background-color: blue;
+                color: white;
+                text-align: center;
+                left: 40px;
+                top: -150px;
+                z-index: 1;
+                position: relative;
+                width: 60%;
+                height: 200px;
+            }
+            .margin-auto {
+                background-color: blue;
+                color: white;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+            }
+            .block {
+                background: pink;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                display: block;
+            }
+            .border-box {
+                box-sizing: border-box;
+                background: red;
+                width: 100px;
+                height: 100px;
+                padding: 30px;
+            }
+            .not-border-box {
+                background: green;
+                width: 100px;
+                height: 100px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--"position" property: override normal flow of document (how block & inline elements are displayed normally)-->
+        <!--"position" property values: relative (relative to itself), absolute (lock element to positioned ancestor), static (default), fixed (relative to viewport)-->
+        <!--offset properties: left, right, top, bottom-->
+        <p class="position">I am position</p>
+
+        <!--"float" property: removed elements from normal flow, push left or right-->
+        <!--"width" property: horizontal space floated element requires-->
+        <!--"clear" property values: left, right, both-->
+        <p class="float">I am float</p>
+        <br><br><br>
+
+        <!--"z-index- property: higher integer value = higher stack, doesn't work with "position:static" -->
+        <div class="z-index1"></div>
+        <div class="z-index2">I am z-index</div>
+
+        <!--"margin" property: set value to auto to center block element horizontally-->
+        <div class="margin-auto">I am margin-auto</div>
+
+        <!--block elements: always starts on new line, takes full width, can change width & height, respected top & bottom margin/padding-->
+        <!--inline elements: does not start on new line, only occupy required width, top & bottom margin/padding not respected-->
+        <!--inline-block elements: same as inline, but height, width, top & bottom margin/padding are respected-->
+        <!--"display" property values: none, inline, block, inline-block-->
+        <p class="block">I am block element</p>
+
+        <!--"box-sizing" property values: border-box (total width & height include padding & margin), content-box (default)-->
+        <div class="border-box">I am border-box</div>
+        <div class="not-border-box">I am not border-box</div>
+    </body>
+</html>
