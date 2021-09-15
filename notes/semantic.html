@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <!--semantic HTML tags: elements that gives accessibility and meaning to webpages, rather than just presentation-->
-    <!--examples:  <main>, <header>, <nav>, <section>, <article> <aside>, <footer>-->
+<!--semantic HTML tags: elements that gives accessibility and meaning to webpages, rather than just presentation-->
+<!--examples:  <main>, <header>, <nav>, <section>, <article> <aside>, <footer>-->
 
-        <head>
-            <!--external CSS-->
-            <link rel="stylesheet" href="styles.css">
-        </head>
+<head>
+    <!--external CSS-->
+    <link rel="stylesheet" href="styles.css">
 
-        <body>
-            <!--"main" element: helps SEO with page's main content-->
-            <main>
-                <h1>Lorem Ipsum</h1>
-            </main>
+    <title>I am title</title>
+</head>
 
-            <!--"audio" element: plays audio file-->
-            <!--"control" attribute: adds play, pause, volume -->
-            <audio controls>
-                <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
-            </audio>
+<body>
+    <!--"main" element: helps SEO with page's main content-->
+    <main>
+        <h1>Lorem Ipsum</h1>
+    </main>
 
-            <!--"figure" element: wrap visuals with caption-->
-            <figure>
-                <img src="https://cdn.myanimelist.net/images/characters/6/343344.jpg" alt="mob">
-                <figcaption>An image of Mob</figcaption>
-            </figure>
+    <details>
+        <summary>I am summary</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, sunt!</p>
+    </details>
 
-            <!--"time" element: inline element that wraps around date or time-->
-            <!--"datetime" attribute: holds valid format of date-->
-            <p>Today is <time datetime="2000-12-26">December 26.</time></p>
+    <dialog open>
+        <p>Hello</p>
+    </dialog>
 
-            <!--"tabindex" attribute: specifies tab order of elements, and makes elements focusable-->
-            <!--"tabindex" values: -1(focusable, but not via keyboard), 0(focusable, but no set order), positive(sets focusable order)-->
-            <p tabindex="0">index = 0</p>
-            <p tabindex="2">index = 2</p>
-            <p tabindex="1">index = 1</p>
-            <p tabindex="-1">index = -1</p>
+    <!--"figure" element: wrap visuals with caption-->
+    <figure>
+        <img src="https://cdn.myanimelist.net/images/characters/6/343344.jpg" alt="mob">
+        <figcaption>An image of Mob</figcaption>
+    </figure>
 
-        </body>
+    <!--"mark" element: highlights text-->
+    <p>I am <mark>mark</mark></p>
+
+    <!--"audio" element: plays audio file-->
+    <!--"control" attribute: adds play, pause, volume -->
+    <audio controls>
+        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+
+    <!--"video" element: show video-->
+    <video width="500" controls>
+        <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
+        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+        Your browser does not support the video format.
+    </video>
+
+    <!--"iframe" element: -->
+
+    <!--"time" element: inline element that wraps around date or time-->
+    <!--"datetime" attribute: holds valid format of date-->
+    <p>Today is <time datetime="2000-12-26">December 26.</time></p>
+
+    <!--"blockquote" element: indented quoted text-->
+    <!--"<q>" (short inline quotes), "<cite>" (name, book, etc.)-->
+    <blockquote cite="https://myanimelist.net/anime/32182/Mob_Psycho_100">
+        Eighth-grader Shigeo "Mob" Kageyama has tapped into his inner wellspring of psychic prowess at a young age. But
+        the power quickly proves to be a liability when he realizes the potential danger in his skills. Choosing to
+        suppress his power, Mob's only present use for his ability is to impress his longtime crush, Tsubomi, who soon
+        grows bored of the same tricks.
+    </blockquote>
+
+    <!--"pre" element: text will display exactly as written in HTML-->
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rerum libero,       a omnis eum nemo
+
+        assumenda minus                 vel possimus!
+    </pre>
+
+    <!--"tabindex" attribute: specifies tab order of elements, and makes elements focusable-->
+    <!--"tabindex" values: -1(focusable, but not via keyboard), 0(focusable, but no set order), positive(sets focusable order)-->
+    <p tabindex="0">index = 0</p>
+    <p tabindex="2">index = 2</p>
+    <p tabindex="1">index = 1</p>
+    <p tabindex="-1">index = -1</p>
+
+</body>
+
 </html>
