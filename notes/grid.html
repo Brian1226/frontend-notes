@@ -10,15 +10,17 @@
     <!--CONTAINER:-->
     <!--"display:grid"-->
 
-    <!--"grid-template-columns" property: number of columns in the grid, and width of each column-->
-    <!--"grid-template-rows" property: number of rows in the grid, and height of each column-->
+    <!--"grid-template-columns" property: # of values = # of columns, and each value = width of each column-->
+    <!--"grid-template-rows" property: # of rows, and height of each column-->
     <!--units: px, em, fr, auto, %-->
-    <!--"repeat()" function: (# of times columns/rows repeated, value repeated)-->
+    <!--"repeat()" function: (# of times columns/rows repeated, width value repeated)-->
     <!--"auto-fill" keyword: used in repeat(), automatically insert as many rows/columns as possible
         depending on container size, keeps inserting empty rows/columns and pushes your items to the side-->
     <!--"auto-fit" keyword: collapses empty rows/columns and stretches  items to fit the size of the container-->
-    <!--"minmax()" function:  limit the size of items when the grid container changes size
-                                (min, max)
+
+    <!--"grid-auto-rows:" property = sets height if no grid-template-rows-->
+    <!--"grid-auto-columns:" property = sets width if no grid-template-columns-->
+    <!--"minmax()" function:  limit the size of items when the grid container changes size, (min, max)
     -->
 
     <!--"grid-column-gap" property: add a gap between columns-->
